@@ -5,37 +5,6 @@ import { Mail, ArrowRight } from "lucide-react";
 const VerfoliaFooter = () => {
   return (
     <footer className="relative overflow-hidden">
-      {/* CTA Section */}
-      <section className="py-20 lg:py-32 relative">
-        <div className="absolute inset-0 bg-gradient-to-r from-primary/10 via-accent/10 to-primary/10"></div>
-        <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 text-center relative z-10">
-          <h2 className="text-3xl md:text-5xl font-bold mb-6">
-            Ready to Transform Your{" "}
-            <span className="verfolia-text-gradient">Professional Journey?</span>
-          </h2>
-          <p className="text-xl text-muted-foreground mb-8 max-w-3xl mx-auto">
-            Join thousands of professionals who've ditched the resume black hole for real-time career insights.
-          </p>
-          
-          <div className="verfolia-card max-w-md mx-auto">
-            <div className="flex flex-col sm:flex-row gap-3">
-              <div className="flex-1">
-                <Input
-                  placeholder="Enter your email"
-                  className="bg-background border-border focus:border-primary"
-                />
-              </div>
-              <Button className="bg-primary hover:bg-primary/90 text-primary-foreground verfolia-glow group">
-                Join Waitlist
-                <ArrowRight className="ml-2 w-4 h-4 group-hover:translate-x-1 transition-transform" />
-              </Button>
-            </div>
-            <p className="text-xs text-muted-foreground mt-3">
-              Get early access and exclusive updates. No spam, ever.
-            </p>
-          </div>
-        </div>
-      </section>
 
       {/* Footer Links */}
       <div className="border-t border-border bg-background/80 backdrop-blur-sm">

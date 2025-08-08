@@ -6,7 +6,7 @@ const VerfoliaHero = () => {
   return (
     <section 
       id="home" 
-      className="min-h-screen flex items-center justify-center relative overflow-hidden verfolia-hero-bg"
+      className="min-h-screen flex items-center justify-center relative overflow-hidden verfolia-hero-bg pt-20"
       style={{
         backgroundImage: `url(${heroBg})`,
         backgroundSize: 'cover',
@@ -38,34 +38,34 @@ const VerfoliaHero = () => {
         </div>
 
         {/* Hero Action Cards */}
-        <div className="verfolia-animate-slide-up grid grid-cols-1 md:grid-cols-3 gap-6 mb-12 max-w-4xl mx-auto" style={{ animationDelay: '0.6s' }}>
-          <div className="verfolia-card group cursor-pointer">
+        <div className="verfolia-animate-slide-up grid grid-cols-1 md:grid-cols-3 gap-8 mb-12 max-w-5xl mx-auto" style={{ animationDelay: '0.6s' }}>
+          <div className="verfolia-card group cursor-pointer hover:scale-105 transition-all duration-300 border border-primary/20 hover:border-primary/40">
             <div className="text-center">
-              <div className="w-12 h-12 bg-primary/20 rounded-full flex items-center justify-center mx-auto mb-4 group-hover:bg-primary/30 transition-colors">
-                <Play className="w-6 h-6 text-primary" />
+              <div className="w-16 h-16 bg-gradient-to-br from-primary/30 to-primary/10 rounded-2xl flex items-center justify-center mx-auto mb-6 group-hover:from-primary/40 group-hover:to-primary/20 transition-all duration-300 verfolia-glow">
+                <Play className="w-8 h-8 text-primary group-hover:scale-110 transition-transform" />
               </div>
-              <h3 className="text-lg font-semibold text-foreground mb-2">View Profile</h3>
-              <p className="text-sm text-muted-foreground">See how your dynamic profile looks to recruiters</p>
+              <h3 className="text-xl font-bold text-foreground mb-3 group-hover:text-primary transition-colors">View Profile</h3>
+              <p className="text-muted-foreground leading-relaxed">Experience your dynamic profile as recruiters see it - interactive, engaging, and memorable</p>
             </div>
           </div>
           
-          <div className="verfolia-card group cursor-pointer">
+          <div className="verfolia-card group cursor-pointer hover:scale-105 transition-all duration-300 border border-accent/20 hover:border-accent/40">
             <div className="text-center">
-              <div className="w-12 h-12 bg-accent/20 rounded-full flex items-center justify-center mx-auto mb-4 group-hover:bg-accent/30 transition-colors">
-                <ArrowRight className="w-6 h-6 text-accent" />
+              <div className="w-16 h-16 bg-gradient-to-br from-accent/30 to-accent/10 rounded-2xl flex items-center justify-center mx-auto mb-6 group-hover:from-accent/40 group-hover:to-accent/20 transition-all duration-300 verfolia-glow">
+                <ArrowRight className="w-8 h-8 text-accent group-hover:scale-110 transition-transform" />
               </div>
-              <h3 className="text-lg font-semibold text-foreground mb-2">View Analytics</h3>
-              <p className="text-sm text-muted-foreground">Track who views your profile in real-time</p>
+              <h3 className="text-xl font-bold text-foreground mb-3 group-hover:text-accent transition-colors">View Analytics</h3>
+              <p className="text-muted-foreground leading-relaxed">Get real-time insights on profile views, engagement metrics, and recruiter activity</p>
             </div>
           </div>
           
-          <div className="verfolia-card group cursor-pointer">
+          <div className="verfolia-card group cursor-pointer hover:scale-105 transition-all duration-300 border border-primary/20 hover:border-primary/40">
             <div className="text-center">
-              <div className="w-12 h-12 bg-primary/20 rounded-full flex items-center justify-center mx-auto mb-4 group-hover:bg-primary/30 transition-colors">
-                <Play className="w-6 h-6 text-primary" />
+              <div className="w-16 h-16 bg-gradient-to-br from-primary/30 to-accent/20 rounded-2xl flex items-center justify-center mx-auto mb-6 group-hover:from-primary/40 group-hover:to-accent/30 transition-all duration-300 verfolia-glow">
+                <Play className="w-8 h-8 text-primary group-hover:scale-110 transition-transform" />
               </div>
-              <h3 className="text-lg font-semibold text-foreground mb-2">Cover Letter</h3>
-              <p className="text-sm text-muted-foreground">Generate AI-powered cover letters instantly</p>
+              <h3 className="text-xl font-bold text-foreground mb-3 group-hover:text-primary transition-colors">Cover Letter</h3>
+              <p className="text-muted-foreground leading-relaxed">Generate personalized, AI-powered cover letters tailored to each opportunity</p>
             </div>
           </div>
         </div>
