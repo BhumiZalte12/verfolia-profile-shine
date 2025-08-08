@@ -37,27 +37,52 @@ const VerfoliaHero = () => {
           </p>
         </div>
 
-        <div className="verfolia-animate-slide-up flex flex-col sm:flex-row items-center justify-center gap-4 mb-12" style={{ animationDelay: '0.6s' }}>
+        {/* Hero Action Cards */}
+        <div className="verfolia-animate-slide-up grid grid-cols-1 md:grid-cols-3 gap-6 mb-12 max-w-4xl mx-auto" style={{ animationDelay: '0.6s' }}>
+          <div className="verfolia-card group cursor-pointer">
+            <div className="text-center">
+              <div className="w-12 h-12 bg-primary/20 rounded-full flex items-center justify-center mx-auto mb-4 group-hover:bg-primary/30 transition-colors">
+                <Play className="w-6 h-6 text-primary" />
+              </div>
+              <h3 className="text-lg font-semibold text-foreground mb-2">View Profile</h3>
+              <p className="text-sm text-muted-foreground">See how your dynamic profile looks to recruiters</p>
+            </div>
+          </div>
+          
+          <div className="verfolia-card group cursor-pointer">
+            <div className="text-center">
+              <div className="w-12 h-12 bg-accent/20 rounded-full flex items-center justify-center mx-auto mb-4 group-hover:bg-accent/30 transition-colors">
+                <ArrowRight className="w-6 h-6 text-accent" />
+              </div>
+              <h3 className="text-lg font-semibold text-foreground mb-2">View Analytics</h3>
+              <p className="text-sm text-muted-foreground">Track who views your profile in real-time</p>
+            </div>
+          </div>
+          
+          <div className="verfolia-card group cursor-pointer">
+            <div className="text-center">
+              <div className="w-12 h-12 bg-primary/20 rounded-full flex items-center justify-center mx-auto mb-4 group-hover:bg-primary/30 transition-colors">
+                <Play className="w-6 h-6 text-primary" />
+              </div>
+              <h3 className="text-lg font-semibold text-foreground mb-2">Cover Letter</h3>
+              <p className="text-sm text-muted-foreground">Generate AI-powered cover letters instantly</p>
+            </div>
+          </div>
+        </div>
+
+        {/* Main CTA Button */}
+        <div className="verfolia-animate-slide-up flex justify-center mb-12" style={{ animationDelay: '0.8s' }}>
           <Button 
             size="lg" 
             className="bg-primary hover:bg-primary/90 text-primary-foreground px-8 py-4 text-lg verfolia-glow group"
           >
-            Join Waitlist
+            Get Started
             <ArrowRight className="ml-2 w-5 h-5 group-hover:translate-x-1 transition-transform" />
-          </Button>
-          
-          <Button 
-            size="lg" 
-            variant="outline" 
-            className="border-primary text-primary hover:bg-primary/10 px-8 py-4 text-lg group"
-          >
-            <Play className="mr-2 w-5 h-5 group-hover:scale-110 transition-transform" />
-            Watch Demo
           </Button>
         </div>
 
         {/* Stats */}
-        <div className="verfolia-animate-fade-in grid grid-cols-2 md:grid-cols-4 gap-8 max-w-2xl mx-auto" style={{ animationDelay: '0.8s' }}>
+        <div className="verfolia-animate-fade-in grid grid-cols-2 md:grid-cols-4 gap-8 max-w-2xl mx-auto" style={{ animationDelay: '1s' }}>
           <div className="text-center">
             <div className="text-2xl md:text-3xl font-bold verfolia-text-gradient">5K+</div>
             <div className="text-sm text-muted-foreground">Professionals</div>

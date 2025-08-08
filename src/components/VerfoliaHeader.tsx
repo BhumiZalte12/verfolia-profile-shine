@@ -33,18 +33,18 @@ const VerfoliaHeader = () => {
                 <ChevronDown className="w-4 h-4" />
               </button>
             </div>
-            <a href="#docs" className="text-foreground hover:text-primary transition-colors">
-              Documentation
+            <a href="#templates" className="text-foreground hover:text-primary transition-colors">
+              Templates
             </a>
           </nav>
 
           {/* CTA Buttons */}
           <div className="hidden md:flex items-center space-x-4">
-            <Button variant="ghost" className="text-foreground hover:text-primary">
-              Sign In
-            </Button>
             <Button className="bg-primary hover:bg-primary/90 text-primary-foreground verfolia-glow">
-              Join Waitlist
+              Sign Up
+            </Button>
+            <Button variant="outline" className="border-primary text-primary hover:bg-primary/10">
+              Dashboard
             </Button>
           </div>
 
@@ -74,15 +74,15 @@ const VerfoliaHeader = () => {
               <a href="#features" className="text-foreground hover:text-primary transition-colors">
                 Features
               </a>
-              <a href="#docs" className="text-foreground hover:text-primary transition-colors">
-                Documentation
+              <a href="#templates" className="text-foreground hover:text-primary transition-colors">
+                Templates
               </a>
               <div className="flex flex-col space-y-2 pt-4">
-                <Button variant="ghost" className="text-foreground hover:text-primary justify-start">
-                  Sign In
-                </Button>
                 <Button className="bg-primary hover:bg-primary/90 text-primary-foreground justify-start">
-                  Join Waitlist
+                  Sign Up
+                </Button>
+                <Button variant="outline" className="border-primary text-primary hover:bg-primary/10 justify-start">
+                  Dashboard
                 </Button>
               </div>
             </nav>
