@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { Button } from "@/components/ui/button";
 import { Menu, X, ChevronDown } from "lucide-react";
+import AuthDialog from "@/components/AuthDialog";
 
 const VerfoliaHeader = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -40,9 +41,7 @@ const VerfoliaHeader = () => {
 
           {/* CTA Buttons */}
           <div className="hidden md:flex items-center space-x-4">
-            <Button className="bg-primary hover:bg-primary/90 text-primary-foreground verfolia-glow">
-              Sign Up
-            </Button>
+            <AuthDialog />
             <Button variant="outline" className="border-primary text-primary hover:bg-primary/10">
               Dashboard
             </Button>
@@ -78,9 +77,7 @@ const VerfoliaHeader = () => {
                 Templates
               </a>
               <div className="flex flex-col space-y-2 pt-4">
-                <Button className="bg-primary hover:bg-primary/90 text-primary-foreground justify-start">
-                  Sign Up
-                </Button>
+                <AuthDialog />
                 <Button variant="outline" className="border-primary text-primary hover:bg-primary/10 justify-start">
                   Dashboard
                 </Button>

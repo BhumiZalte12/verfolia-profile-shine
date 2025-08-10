@@ -3,7 +3,7 @@ import VerfoliaHero from "@/components/VerfoliaHero";
 import VerfoliaFeatures from "@/components/VerfoliaFeatures";
 import VerfoliaTemplates from "@/components/VerfoliaTemplates";
 import VerfoliaComparison from "@/components/VerfoliaComparison";
-import VerfoliaReviews from "@/components/VerfoliaReviews";
+
 import VerfoliaFooter from "@/components/VerfoliaFooter";
 
 const Index = () => {
@@ -15,7 +15,7 @@ const Index = () => {
         <VerfoliaFeatures />
         <VerfoliaTemplates />
         <VerfoliaComparison />
-        <VerfoliaReviews />
+        
       </main>
       <VerfoliaFooter />
     </div>
