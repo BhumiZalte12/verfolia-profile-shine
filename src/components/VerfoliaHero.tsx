@@ -40,89 +40,106 @@ const VerfoliaHero = () => {
           </p>
         </div>
 
-        {/* Quick Start Section */}
+        {/* Enhanced Quick Start Section */}
         <div className="verfolia-animate-slide-up mb-12" style={{ animationDelay: '0.6s' }}>
           <div className="flex items-center justify-center gap-2 mb-8">
-            <Badge variant="secondary" className="bg-primary/10 text-primary border-primary/20 hover:bg-primary/20">
-              <Sparkles className="w-4 h-4 mr-1" />
-              Quick Start
+            <Badge variant="secondary" className="bg-primary/15 text-primary border-primary/30 hover:bg-primary/25 px-4 py-2">
+              <Sparkles className="w-4 h-4 mr-2" />
+              Quick Start Guide
             </Badge>
           </div>
           
-          <Card className="max-w-4xl mx-auto verfolia-card border-primary/20">
-            <CardContent className="p-8">
-              <h3 className="text-2xl font-bold text-center mb-8 verfolia-text-gradient">
+          <Card className="max-w-5xl mx-auto verfolia-card border-primary/20 bg-gradient-to-br from-background via-card to-background shadow-2xl">
+            <CardContent className="p-8 md:p-12">
+              <h3 className="text-3xl md:text-4xl font-bold text-center mb-4 verfolia-text-gradient">
                 Get Started in 3 Simple Steps
               </h3>
+              <p className="text-center text-muted-foreground mb-12 text-lg max-w-2xl mx-auto">
+                Transform your career in minutes with our streamlined onboarding process
+              </p>
               
-              <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+              <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 mb-12">
                 {/* Step 1 */}
-                <div className="text-center group">
-                  <div className="relative mb-6">
-                    <div className="w-16 h-16 bg-gradient-to-br from-primary/30 to-primary/10 rounded-2xl flex items-center justify-center mx-auto group-hover:from-primary/40 group-hover:to-primary/20 transition-all duration-300">
-                      <Users className="w-8 h-8 text-primary" />
+                <div className="text-center group relative">
+                  <div className="relative mb-8">
+                    <div className="absolute inset-0 bg-gradient-to-r from-primary/20 to-accent/20 rounded-3xl blur-xl opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+                    <div className="relative w-20 h-20 bg-gradient-to-br from-primary/30 via-primary/20 to-primary/10 rounded-3xl flex items-center justify-center mx-auto group-hover:scale-110 transition-all duration-300 border border-primary/20">
+                      <Users className="w-10 h-10 text-primary" />
                     </div>
-                    <Badge className="absolute -top-2 -right-2 bg-primary text-primary-foreground text-xs px-2 py-1">
-                      1
+                    <Badge className="absolute -top-3 -right-3 bg-gradient-to-r from-primary to-accent text-white text-sm px-3 py-1 shadow-lg">
+                      01
                     </Badge>
                   </div>
-                  <h4 className="text-lg font-semibold mb-2 text-foreground">Create Account</h4>
-                  <p className="text-muted-foreground text-sm leading-relaxed">
-                    Sign up in seconds and start building your dynamic professional presence
+                  <h4 className="text-xl font-bold mb-3 text-foreground">Create Account</h4>
+                  <p className="text-muted-foreground leading-relaxed">
+                    Sign up in seconds and start building your dynamic professional presence with our intuitive platform
                   </p>
+                  <div className="mt-6 h-1 bg-gradient-to-r from-primary/50 to-transparent rounded-full"></div>
                 </div>
 
                 {/* Step 2 */}
-                <div className="text-center group">
-                  <div className="relative mb-6">
-                    <div className="w-16 h-16 bg-gradient-to-br from-accent/30 to-accent/10 rounded-2xl flex items-center justify-center mx-auto group-hover:from-accent/40 group-hover:to-accent/20 transition-all duration-300">
-                      <FileText className="w-8 h-8 text-accent" />
+                <div className="text-center group relative">
+                  <div className="relative mb-8">
+                    <div className="absolute inset-0 bg-gradient-to-r from-accent/20 to-primary/20 rounded-3xl blur-xl opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+                    <div className="relative w-20 h-20 bg-gradient-to-br from-accent/30 via-accent/20 to-accent/10 rounded-3xl flex items-center justify-center mx-auto group-hover:scale-110 transition-all duration-300 border border-accent/20">
+                      <FileText className="w-10 h-10 text-accent" />
                     </div>
-                    <Badge className="absolute -top-2 -right-2 bg-accent text-accent-foreground text-xs px-2 py-1">
-                      2
+                    <Badge className="absolute -top-3 -right-3 bg-gradient-to-r from-accent to-primary text-white text-sm px-3 py-1 shadow-lg">
+                      02
                     </Badge>
                   </div>
-                  <h4 className="text-lg font-semibold mb-2 text-foreground">Build Profile</h4>
-                  <p className="text-muted-foreground text-sm leading-relaxed">
-                    Upload your resume and let AI transform it into an interactive profile
+                  <h4 className="text-xl font-bold mb-3 text-foreground">Build Profile</h4>
+                  <p className="text-muted-foreground leading-relaxed">
+                    Upload your resume and let our AI transform it into an interactive, engaging professional profile
                   </p>
+                  <div className="mt-6 h-1 bg-gradient-to-r from-accent/50 to-transparent rounded-full"></div>
                 </div>
 
                 {/* Step 3 */}
-                <div className="text-center group">
-                  <div className="relative mb-6">
-                    <div className="w-16 h-16 bg-gradient-to-br from-primary/30 to-accent/20 rounded-2xl flex items-center justify-center mx-auto group-hover:from-primary/40 group-hover:to-accent/30 transition-all duration-300">
-                      <BarChart3 className="w-8 h-8 text-primary" />
+                <div className="text-center group relative">
+                  <div className="relative mb-8">
+                    <div className="absolute inset-0 bg-gradient-to-r from-primary/20 to-accent/20 rounded-3xl blur-xl opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+                    <div className="relative w-20 h-20 bg-gradient-to-br from-primary/30 via-accent/20 to-primary/10 rounded-3xl flex items-center justify-center mx-auto group-hover:scale-110 transition-all duration-300 border border-primary/20">
+                      <BarChart3 className="w-10 h-10 text-primary" />
                     </div>
-                    <Badge className="absolute -top-2 -right-2 bg-gradient-to-r from-primary to-accent text-white text-xs px-2 py-1">
-                      3
+                    <Badge className="absolute -top-3 -right-3 bg-gradient-to-r from-primary via-accent to-primary text-white text-sm px-3 py-1 shadow-lg">
+                      03
                     </Badge>
                   </div>
-                  <h4 className="text-lg font-semibold mb-2 text-foreground">Track Success</h4>
-                  <p className="text-muted-foreground text-sm leading-relaxed">
-                    Monitor profile views, engagement, and optimize for better results
+                  <h4 className="text-xl font-bold mb-3 text-foreground">Track Success</h4>
+                  <p className="text-muted-foreground leading-relaxed">
+                    Monitor profile views, engagement metrics, and optimize your presence for better career results
                   </p>
+                  <div className="mt-6 h-1 bg-gradient-to-r from-primary/50 to-transparent rounded-full"></div>
                 </div>
               </div>
 
-              {/* Features Preview */}
-              <div className="mt-10 pt-8 border-t border-border">
-                <div className="grid grid-cols-2 md:grid-cols-4 gap-6 text-center">
-                  <div className="flex flex-col items-center gap-2">
-                    <Zap className="w-6 h-6 text-primary" />
-                    <span className="text-sm text-muted-foreground">AI-Powered</span>
+              {/* Enhanced Features Preview */}
+              <div className="pt-8 border-t border-border/50">
+                <div className="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
+                  <div className="flex flex-col items-center gap-3 group">
+                    <div className="w-12 h-12 bg-gradient-to-br from-primary/20 to-primary/10 rounded-2xl flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
+                      <Zap className="w-6 h-6 text-primary" />
+                    </div>
+                    <span className="text-sm font-medium text-muted-foreground">AI-Powered</span>
                   </div>
-                  <div className="flex flex-col items-center gap-2">
-                    <Clock className="w-6 h-6 text-accent" />
-                    <span className="text-sm text-muted-foreground">Real-time</span>
+                  <div className="flex flex-col items-center gap-3 group">
+                    <div className="w-12 h-12 bg-gradient-to-br from-accent/20 to-accent/10 rounded-2xl flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
+                      <Clock className="w-6 h-6 text-accent" />
+                    </div>
+                    <span className="text-sm font-medium text-muted-foreground">Real-time</span>
                   </div>
-                  <div className="flex flex-col items-center gap-2">
-                    <BarChart3 className="w-6 h-6 text-primary" />
-                    <span className="text-sm text-muted-foreground">Analytics</span>
+                  <div className="flex flex-col items-center gap-3 group">
+                    <div className="w-12 h-12 bg-gradient-to-br from-primary/20 to-primary/10 rounded-2xl flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
+                      <BarChart3 className="w-6 h-6 text-primary" />
+                    </div>
+                    <span className="text-sm font-medium text-muted-foreground">Analytics</span>
                   </div>
-                  <div className="flex flex-col items-center gap-2">
-                    <Sparkles className="w-6 h-6 text-accent" />
-                    <span className="text-sm text-muted-foreground">Dynamic</span>
+                  <div className="flex flex-col items-center gap-3 group">
+                    <div className="w-12 h-12 bg-gradient-to-br from-accent/20 to-accent/10 rounded-2xl flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
+                      <Sparkles className="w-6 h-6 text-accent" />
+                    </div>
+                    <span className="text-sm font-medium text-muted-foreground">Dynamic</span>
                   </div>
                 </div>
               </div>
