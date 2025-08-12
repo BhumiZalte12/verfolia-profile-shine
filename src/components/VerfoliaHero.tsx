@@ -150,7 +150,7 @@ const VerfoliaHero = () => {
         {/* Main CTA Section */}
         <div className="verfolia-animate-slide-up space-y-6" style={{ animationDelay: '0.8s' }}>
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
-            <AuthDialog />
+            <AuthDialog buttonText="Sign Up Free" buttonSize="lg" />
             <Button 
               variant="outline" 
               size="lg" 

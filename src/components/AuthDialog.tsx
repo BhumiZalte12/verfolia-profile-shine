@@ -13,7 +13,7 @@ import { Label } from "@/components/ui/label";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { UserPlus, LogIn } from "lucide-react";
 
-const AuthDialog = () => {
+const AuthDialog = ({ buttonText = "Get Started", buttonSize = "default" }: { buttonText?: string; buttonSize?: "default" | "lg" }) => {
   const [open, setOpen] = useState(false);
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
@@ -34,9 +34,12 @@ const AuthDialog = () => {
   return (
     <Dialog open={open} onOpenChange={setOpen}>
       <DialogTrigger asChild>
-        <Button size="lg" className="px-8 py-4 text-lg bg-primary text-primary-foreground hover:bg-primary/90 verfolia-glow">
-          <UserPlus className="w-5 h-5 mr-2" />
-          Sign Up Free
+        <Button 
+          size={buttonSize} 
+          className={buttonSize === "lg" ? "px-8 py-4 text-lg bg-primary text-primary-foreground hover:bg-primary/90 verfolia-glow" : "verfolia-glow"}
+        >
+          <UserPlus className={buttonSize === "lg" ? "w-5 h-5 mr-2" : "w-4 h-4 mr-2"} />
+          {buttonText}
         </Button>
       </DialogTrigger>
       <DialogContent className="max-w-md">
