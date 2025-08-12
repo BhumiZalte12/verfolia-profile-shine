@@ -32,11 +32,6 @@ const features = [
 
 const additionalFeatures = [
   {
-    icon: Shield,
-    title: "Secure Sharing",
-    description: "Your profile is a single, unique URL you can share anywhere, with full privacy control."
-  },
-  {
     icon: Eye,
     title: "Live Insights",
     description: "Get notified the moment someone views your profile with detailed engagement metrics."
@@ -91,7 +86,7 @@ const VerfoliaFeatures = () => {
         </div>
 
         {/* Additional Features Grid */}
-        <div className="grid md:grid-cols-3 gap-6">
+        <div className="grid md:grid-cols-2 gap-6 max-w-4xl mx-auto">
           {additionalFeatures.map((feature, index) => (
             <div
               key={feature.title}

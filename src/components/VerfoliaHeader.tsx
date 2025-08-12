@@ -44,9 +44,6 @@ const VerfoliaHeader = () => {
           <div className="hidden md:flex items-center space-x-4">
             <ThemeToggle />
             <AuthDialog />
-            <Button variant="outline" className="border-primary text-primary hover:bg-primary/10">
-              Dashboard
-            </Button>
           </div>
 
           {/* Mobile Menu Button */}
@@ -83,9 +80,6 @@ const VerfoliaHeader = () => {
                   <ThemeToggle />
                   <AuthDialog />
                 </div>
-                <Button variant="outline" className="border-primary text-primary hover:bg-primary/10 justify-start">
-                  Dashboard
-                </Button>
               </div>
             </nav>
           </div>
