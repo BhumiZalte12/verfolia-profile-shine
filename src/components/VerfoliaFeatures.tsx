@@ -30,6 +30,21 @@ const features = [
   }
 ];
 
+<<<<<<< HEAD
+=======
+const additionalFeatures = [
+  {
+    icon: Eye,
+    title: "Live Insights",
+    description: "Get notified the moment someone views your profile with detailed engagement metrics."
+  },
+  {
+    icon: Zap,
+    title: "Instant Updates",
+    description: "Update your profile once and it reflects everywhere you've shared it immediately."
+  }
+];
+>>>>>>> d5c9cdf1f4e87b3bb2dd31e3b8e53a61b4f9f117
 
 const VerfoliaFeatures = () => {
   return (
@@ -73,7 +88,26 @@ const VerfoliaFeatures = () => {
           ))}
         </div>
 
+<<<<<<< HEAD
        
+=======
+        {/* Additional Features Grid */}
+        <div className="grid md:grid-cols-2 gap-6 max-w-4xl mx-auto">
+          {additionalFeatures.map((feature, index) => (
+            <div
+              key={feature.title}
+              className="verfolia-card group text-center"
+              style={{ animationDelay: `${(index + 3) * 0.2}s` }}
+            >
+              <div className={`w-12 h-12 rounded-xl bg-primary/10 text-primary flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform`}>
+                <feature.icon className="w-6 h-6" />
+              </div>
+              <h4 className="text-lg font-semibold mb-2">{feature.title}</h4>
+              <p className="text-muted-foreground text-sm">{feature.description}</p>
+            </div>
+          ))}
+        </div>
+>>>>>>> d5c9cdf1f4e87b3bb2dd31e3b8e53a61b4f9f117
 
         
             

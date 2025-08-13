@@ -152,7 +152,11 @@ const VerfoliaHero = () => {
         {/* Main CTA Section */}
         <div className="verfolia-animate-slide-up space-y-6" style={{ animationDelay: '0.8s' }}>
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
+<<<<<<< HEAD
             <AuthDialog buttonText="Create Profile" buttonSize="lg" />
+=======
+            <AuthDialog buttonText="Sign Up Free" buttonSize="lg" />
+>>>>>>> d5c9cdf1f4e87b3bb2dd31e3b8e53a61b4f9f117
             <Button 
               variant="outline" 
               size="lg" 
@@ -163,9 +167,15 @@ const VerfoliaHero = () => {
             </Button>
           </div>
           
+<<<<<<< HEAD
           <div>
 
           </div>
+=======
+          <p className="text-sm text-muted-foreground text-center">
+            No credit card required • Free 14-day trial • Setup in 2 minutes
+          </p>
+>>>>>>> d5c9cdf1f4e87b3bb2dd31e3b8e53a61b4f9f117
         </div>
 
         {/* Stats */}

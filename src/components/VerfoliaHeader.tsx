@@ -1,7 +1,12 @@
 import { useState } from "react";
 import { Button } from "@/components/ui/button";
 import { Menu, X, ChevronDown } from "lucide-react";
+<<<<<<< HEAD
 import logo from "@/assets/logo.png"; // import your logo image
+=======
+import AuthDialog from "@/components/AuthDialog";
+import { ThemeToggle } from "@/components/ThemeToggle";
+>>>>>>> d5c9cdf1f4e87b3bb2dd31e3b8e53a61b4f9f117
 
 const VerfoliaHeader = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -43,12 +48,17 @@ const VerfoliaHeader = () => {
 
           {/* CTA Buttons */}
           <div className="hidden md:flex items-center space-x-4">
+<<<<<<< HEAD
             <Button className="bg-primary hover:bg-primary/90 text-primary-foreground verfolia-glow">
               Docs
             </Button>
             <Button variant="outline" className="border-primary text-primary hover:bg-primary/10">
              Sign up
             </Button>
+=======
+            <ThemeToggle />
+            <AuthDialog />
+>>>>>>> d5c9cdf1f4e87b3bb2dd31e3b8e53a61b4f9f117
           </div>
 
           {/* Mobile Menu Button */}
@@ -79,12 +89,19 @@ const VerfoliaHeader = () => {
               </a>
               
               <div className="flex flex-col space-y-2 pt-4">
+<<<<<<< HEAD
                 <Button className="bg-primary hover:bg-primary/90 text-primary-foreground justify-start">
                   Sign Up
                 </Button>
                 <Button variant="outline" className="border-primary text-primary hover:bg-primary/10 justify-start">
                   Get Started
                 </Button>
+=======
+                <div className="flex items-center space-x-2">
+                  <ThemeToggle />
+                  <AuthDialog />
+                </div>
+>>>>>>> d5c9cdf1f4e87b3bb2dd31e3b8e53a61b4f9f117
               </div>
             </nav>
           </div>
