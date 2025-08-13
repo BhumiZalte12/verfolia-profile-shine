@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { Button } from "@/components/ui/button";
 import { Menu, X, ChevronDown } from "lucide-react";
+import logo from "@/assets/logo.png"; // import your logo image
 
 const VerfoliaHeader = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -10,14 +11,18 @@ const VerfoliaHeader = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
+          {/* Logo */}
           <div className="flex items-center space-x-2">
-            <div className="w-8 h-8 bg-primary rounded-lg flex items-center justify-center verfolia-animate-pulse-glow">
-              <div className="w-4 h-4 bg-primary-foreground rounded-sm"></div>
-            </div>
+            <img
+              src={logo}
+              alt="Verfolia Logo"
+              className="w-8 h-8 rounded-lg"
+            />
             <span className="text-xl font-bold verfolia-text-gradient">
               Verfolia
             </span>
           </div>
+
 
           {/* Desktop Navigation */}
           <nav className="hidden md:flex items-center space-x-8">
@@ -33,18 +38,16 @@ const VerfoliaHeader = () => {
                 <ChevronDown className="w-4 h-4" />
               </button>
             </div>
-            <a href="#templates" className="text-foreground hover:text-primary transition-colors">
-              Templates
-            </a>
+           
           </nav>
 
           {/* CTA Buttons */}
           <div className="hidden md:flex items-center space-x-4">
             <Button className="bg-primary hover:bg-primary/90 text-primary-foreground verfolia-glow">
-              Sign Up
+              Docs
             </Button>
             <Button variant="outline" className="border-primary text-primary hover:bg-primary/10">
-              Dashboard
+             Sign up
             </Button>
           </div>
 
@@ -74,15 +77,13 @@ const VerfoliaHeader = () => {
               <a href="#features" className="text-foreground hover:text-primary transition-colors">
                 Features
               </a>
-              <a href="#templates" className="text-foreground hover:text-primary transition-colors">
-                Templates
-              </a>
+              
               <div className="flex flex-col space-y-2 pt-4">
                 <Button className="bg-primary hover:bg-primary/90 text-primary-foreground justify-start">
                   Sign Up
                 </Button>
                 <Button variant="outline" className="border-primary text-primary hover:bg-primary/10 justify-start">
-                  Dashboard
+                  Get Started
                 </Button>
               </div>
             </nav>

@@ -30,23 +30,6 @@ const features = [
   }
 ];
 
-const additionalFeatures = [
-  {
-    icon: Shield,
-    title: "Secure Sharing",
-    description: "Your profile is a single, unique URL you can share anywhere, with full privacy control."
-  },
-  {
-    icon: Eye,
-    title: "Live Insights",
-    description: "Get notified the moment someone views your profile with detailed engagement metrics."
-  },
-  {
-    icon: Zap,
-    title: "Instant Updates",
-    description: "Update your profile once and it reflects everywhere you've shared it immediately."
-  }
-];
 
 const VerfoliaFeatures = () => {
   return (
@@ -90,58 +73,10 @@ const VerfoliaFeatures = () => {
           ))}
         </div>
 
-        {/* Additional Features Grid */}
-        <div className="grid md:grid-cols-3 gap-6">
-          {additionalFeatures.map((feature, index) => (
-            <div
-              key={feature.title}
-              className="verfolia-card group text-center"
-              style={{ animationDelay: `${(index + 3) * 0.2}s` }}
-            >
-              <div className={`w-12 h-12 rounded-xl bg-primary/10 text-primary flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform`}>
-                <feature.icon className="w-6 h-6" />
-              </div>
-              <h4 className="text-lg font-semibold mb-2">{feature.title}</h4>
-              <p className="text-muted-foreground text-sm">{feature.description}</p>
-            </div>
-          ))}
-        </div>
+       
 
-        {/* Quick Start Section */}
-        <div className="mt-20 text-center">
-          <div className="verfolia-card max-w-4xl mx-auto">
-            <h3 className="text-2xl md:text-3xl font-bold mb-6">Quick Start</h3>
-            <p className="text-muted-foreground mb-8">
-              Just follow these three simple steps:
-            </p>
+        
             
-            <div className="grid md:grid-cols-3 gap-8">
-              <div className="text-center">
-                <div className="w-12 h-12 bg-primary text-primary-foreground rounded-full flex items-center justify-center mx-auto mb-4 font-bold text-lg">
-                  1
-                </div>
-                <h4 className="font-semibold mb-2">Build your Profile</h4>
-                <p className="text-sm text-muted-foreground">Upload your resume or build a dynamic profile from scratch.</p>
-              </div>
-              
-              <div className="text-center">
-                <div className="w-12 h-12 bg-primary text-primary-foreground rounded-full flex items-center justify-center mx-auto mb-4 font-bold text-lg">
-                  2
-                </div>
-                <h4 className="font-semibold mb-2">Share Your Link</h4>
-                <p className="text-sm text-muted-foreground">Add your unique Verfolia URL to your resume, LinkedIn, or job applications.</p>
-              </div>
-              
-              <div className="text-center">
-                <div className="w-12 h-12 bg-primary text-primary-foreground rounded-full flex items-center justify-center mx-auto mb-4 font-bold text-lg">
-                  3
-                </div>
-                <h4 className="font-semibold mb-2">Get Notified</h4>
-                <p className="text-sm text-muted-foreground">Receive real-time analytics and notifications when recruiters view your profile.</p>
-              </div>
-            </div>
-          </div>
-        </div>
       </div>
     </section>
   );

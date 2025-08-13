@@ -13,7 +13,7 @@ const Index = () => {
       <main>
         <VerfoliaHero />
         <VerfoliaFeatures />
-        <VerfoliaTemplates />
+
         <VerfoliaComparison />
         <VerfoliaReviews />
       </main>
